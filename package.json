@@ -1,0 +1,12 @@
+{
+  "name": "book-a-doctor-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix Server run dev\" \"npm --prefix Client run dev\"",
+    "install-all": "npm --prefix Server install && npm --prefix Client install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
